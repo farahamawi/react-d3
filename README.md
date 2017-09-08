@@ -12,14 +12,7 @@ This project is a simple visualization of a moving object that changes its locat
 
 ### Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development...
-
-#### Prerequisites
-
-You need to have webpack installed globally on your machine.
-```
-sudo npm install -g webpack
-```
+These instructions will get you a copy of the project up and running on your local machine for development.
 
 #### Installing
 
