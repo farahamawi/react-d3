@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
 npm install
 ```
 ```
-npm start
+webpack
 ```
 
 > **Tip:** If you have webpack-dev-server on your machine you may run the following command
