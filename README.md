@@ -6,7 +6,7 @@ This project is a simple visualization of a moving object that changes its locat
 ----------
 ### preview
 
-![alt text](https://raw.githubusercontent.com/farahamawi/react-d3/master/public/home1.2.png)
+![ScreenShot](https://raw.githubusercontent.com/farahamawi/react-d3/master/public/home1.2.png)
 
 ----------
 
