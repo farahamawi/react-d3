@@ -24,7 +24,7 @@ export default class Layout extends React.Component {
 
 
     getNewLocation(data) {
-        const newActiveObject = data.filter((d) => d.Value == "1");
+        const newActiveObject = data.filter((d) => d.Value == '1');
         if (newActiveObject.length == 1 && this.state.activeObject != newActiveObject[0]['Name']) {
             this.setState({ activeObject: newActiveObject[0]['Name'] })
         }

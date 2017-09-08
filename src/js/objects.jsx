@@ -1,5 +1,5 @@
-import React from "react";
-import * as d3 from "d3";
+import React from 'react';
+import * as d3 from 'd3';
 
 export default class Objects extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ export default class Objects extends React.Component {
             .select(`#${selectedObj}`)
             .transition()
             .duration(1000)
-            .attr("x", 200*this.mainDest.indexOf(newLocation))
+            .attr('x', 200*this.mainDest.indexOf(newLocation))
     }
 
     setObjects() {
@@ -29,7 +29,7 @@ export default class Objects extends React.Component {
         //appending object-1
         d3
             .select(this.refs['svg-A'])
-            .append("svg")
+            .append('svg')
                 .attr('id', 'APM1')
                 .attr('x', 0)
                 .append('circle')
@@ -42,7 +42,7 @@ export default class Objects extends React.Component {
         //appending object-2
         d3
             .select(this.refs['svg-B'])
-                .append("svg")
+                .append('svg')
                 .attr('id', 'APM2')
                 .attr('x', 0)
                 .append('circle')
@@ -56,24 +56,24 @@ export default class Objects extends React.Component {
 
     render() {
         const svgContainer = this.mainDest.map((e, i) => (
-            <svg key={i} ref={e} x={200*i} width="200" height="100%">
-                <circle cx="51" cy="100" r="50" fill="white" stroke="black" strokeWidth="2" />
-                <text x="70" y="200" fill="red">{e}</text>
+            <svg key={i} ref={e} x={200*i} width='200' height='100%'>
+                <circle cx='51' cy='100' r='50' fill='white' stroke='black' strokeWidth='2' />
+                <text x='70' y='200' fill='red'>{e}</text>
                 {i!=this.mainDest.length-1 ?
-                    <line x1="100" y1="50%" x2="100%" y2="50%" stroke="black" strokeWidth="2" />
+                    <line x1='100' y1='50%' x2='100%' y2='50%' stroke='black' strokeWidth='2' />
                     : null
                 }
             </svg>
         ));
 
         return (
-            <div className="wrapper">
-                <svg ref="svg-A" width="70%" height="200">
+            <div className='wrapper'>
+                <svg ref='svg-A' width='70%' height='200'>
                     {svgContainer}
                 </svg>
                 <span> Object 1 </span>
                 <hr />
-                <svg ref="svg-B" width="70%" height="200">
+                <svg ref='svg-B' width='70%' height='200'>
                     {svgContainer}
                 </svg>
                 <span> Object 2 </span>
